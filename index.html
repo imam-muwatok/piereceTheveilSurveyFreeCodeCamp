@@ -1,100 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pierce the veil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
-        <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <p>Pierce the Veil</p>
-        <ul>
-            <li><a href="#">Main</a></li>
-            <li><a href="#tribute-info">Discography</a></li>
-            <li><a href="#follow">Follow</a></li>
-        </ul>
-    </nav>
-    
-    <section id="main">
-        <h1 id="title">Pierce the veil</h1>
-        <p class="tagline">Misadventures</p>
-    
-        <figure id="img-div">
-            <img src="https://i.ytimg.com/vi/ltqXGUHwX6I/maxresdefault.jpg" alt="Pierce the veil" id="image">
-            <figcaption id="img-caption"> Tony Perry | Vic Fuentes | Mike Fuentes | Jaime Preciado
-            </figcaption>
-        </figure>
-    </section>
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pierce The Veil Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Pierce The Veil Survey Form</h1>
+    <p id="description">Please fill the form, thank you.</p>
 
-    <section id="tribute-info">
-        <h2>Discography</h2>
-        <ul>
-            <li class="album">
-                <a href="https://en.wikipedia.org/wiki/A_Flair_for_the_Dramatic" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/46/A_Flair_for_the_Dramatic.jpg/220px-A_Flair_for_the_Dramatic.jpg"
-                        alt="A Flair for the Dramatic" class="album-img">
-                    <div class="album-overlay">
-                        <div class="release-date">2007</div>
-                        <div class="album-title">A Flair for <br> the Dramatic</div>
-                    </div>
-                </a>
-            </li>
-            <li class="album">
-                <a href="https://en.wikipedia.org/wiki/Selfish_Machines" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/7/78/Selfish_Machines.jpg"
-                        alt="Selfish Machines" class="album-img">
-                    <div class="album-overlay">
-                        <div class="release-date">2010</div>
-                        <div class="album-title">Selfish Machines</div>
-                    </div>
-                </a>
-            </li>
-            <li class="album">
-                <a href="https://en.wikipedia.org/wiki/Collide_with_the_Sky" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/9/99/CollidewiththeSkycover.jpg"
-                        alt="Collide with the Sky" class="album-img">
-                    <div class="album-overlay">
-                        <div class="release-date">2012</div>
-                        <div class="album-title">Collide with the Sky</div>
-                    </div>
-                </a>
-            </li>
-            <li class="album">
-                <a href="https://en.wikipedia.org/wiki/Misadventures_(Pierce_the_Veil_album)" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/4/48/Misadventures.jpg" alt="Misadventures" class="album-img">
-                    <div class="album-overlay">
-                        <div class="release-date">2016</div>
-                        <div class="album-title">Misadventures</div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </section>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
 
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
 
+      <label for="number" id="number-label">
+        Age
+        <input type="number" id="number" placeholder="How old are you?" min="15" max="40" />
+      </label>
 
+      <label for="dropdown" id="dropdown-label">
+        How do you know Pierce The Veil?
+        <select id="dropdown">
+          <option>Test 1</option>
+          <option>Test 2</option>
+        </select>
+      </label>
 
-    <section id="follow" class="">
-        <h2>Follow Pierce the veil</h2>
-        <ul>
-            <li><a href="https://piercetheveil.net" id="tribute-link" target="_blank"><i class="fas fa-globe"></i></a></li>
-            <li><a href="https://www.instagram.com/piercetheveil/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://twitter.com/piercetheveil" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.facebook.com/PierceTheVeil/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCyipvkWkNpmEQPGovalDjFA" target="_blank"><i class="fab fa-youtube"></i></a></li>
-        </ul>
-    </section>
-    
-    
-    <script src="/script.js"></script>
-    <script src="https://apis.google.com/js/platform.js"></script>
-</body>
+      <label for="member" id="member-label"> Who is your favorite song? </label>
+
+      <input type="radio" name="member" value="1" checked /> Bulls in the bronx <br />
+      <input type="radio" name="member" value="2" /> King a day <br />
+
+      <br /><br />
+      <label for="albums" id="albums-label"> Please choose your favorite album(s)? </label>
+
+      <input type="checkbox" value="cry-for-me" /> A Flair for the Dramatic <br />
+      <input type="checkbox" value="eyes-wide-open" /> Selfish Machines <br />
+      <input type="checkbox" value="more-and-more" /> Collide with the Sky <br />
+      <input type="checkbox" value="feel-special" /> Misadventures <br />
+
+      <br /><br />
+
+      <label for="comments" id="comments-label">
+        Any comments or suggestions?
+        <textarea id="comments" cols="30" rows="10"></textarea>
+      </label>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+
+  </body>
 </html>
 
